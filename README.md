@@ -10,7 +10,7 @@ Features:
   
 
 ### CSV Format  
-### field name :: type 
+### header :: type 
  1. firstName ::           string  
  2. lastName  ::           string  
  3. annualSalary ::        number  
