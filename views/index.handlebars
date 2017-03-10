@@ -1,0 +1,35 @@
+<div ng-app="fileUpload" ng-controller="MyCtrl">
+    <div class="header clearfix">
+        <h3 class="text-muted">Monthly Pay Slip Generator</h3>
+    </div>
+    <div class="jumbotron">
+        <h2>Upload Employee Salaries</h2>
+        <button type="file" class="btn btn-lg btn-success" ngf-select="uploadFiles($file, $invalidFiles)"
+         accept="text/csv; charset=utf-8" ngf-max-size="1MB">
+            Select File</button>
+    </div>
+    <div ng-if="errorMsg != null"><span class="help-block alert-danger">[{ errorMsg }]</span></div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Pay Period</th>
+                <th>Gross Income</th>
+                <th>Income Tax</th>
+                <th>Net Income</th>
+                <th>Super</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="x in tableData">
+                <td>[{ x.name }]</td>
+                <td>[{ x.period }]</td>
+                <td>[{ x.grossIncome }]</td>
+                <td>[{ x.incomeTax }]</td>
+                <td>[{ x.netIncome }]</td>
+                <td>[{ x.superAnnuation }]</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script type="text/javascript" src="./js/taxApp.js"></script>
