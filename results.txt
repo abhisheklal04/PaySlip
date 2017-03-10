@@ -1,0 +1,32 @@
+
+[0m[0m
+[0m  Helpers[0m
+  [32m  √[0m[90m null case[0m
+  [32m  √[0m[90m empty employee object[0m
+  [32m  √[0m[90m incorrect employee Schema[0m
+  [32m  √[0m[90m salary is in string format[0m
+  [32m  √[0m[90m super is in string format[0m
+  [32m  √[0m[90m passing test[0m
+
+[0m  employee[0m
+[0m    /POST paySlip[0m
+    [32m  √[0m[90m it should POST csv file containing 4 employees[0m[33m (62ms)[0m
+No of csv rows allowed: 10
+    [32m  √[0m[90m it should not POST csv file with no. of rows exceeding the limit[0m[33m (63ms)[0m
+Invalid format in csv at line no: 1,2,3,4
+    [32m  √[0m[90m it should not post an incorrect column format csv[0m
+Invalid format in csv at line no: 2,3
+    [32m  √[0m[90m it should not post a partially correct csv[0m
+Incorrect Headers in csv
+    [32m  √[0m[90m it should not post csv without header[0m
+Only .csv files are allowed.
+    [32m  √[0m[90m it should only post a csv file[0m
+
+[0m  loading server[0m
+  [32m  √[0m[90m responds to /[0m
+Not Found
+  [32m  √[0m[90m 404 everything else[0m
+
+
+[92m [0m[32m 14 passing[0m[90m (260ms)[0m
+

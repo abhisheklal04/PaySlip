@@ -7,15 +7,16 @@ The web application calculates employees monthly payslips based on their annual 
 Features:
   1. Upload employee csv format with a delimiter of ' , '  
   2. Calculates monthly gross income, income tax, netIncome, super and displays in table.
-  
+  3. The application generates payslips of 10 employees at a time, but can be increased within constant library.
+  4. The csv is validated for the correct fileformat, no of rows limit, invalid columns, missing headers.
 
 ### CSV Format  
-### header :: type 
- 1. firstName ::           string  
- 2. lastName  ::           string  
- 3. annualSalary ::        number  
- 4. super ::               number  
- 5. paymentStartDate ::     number  
+### header :: type(length)
+ 1. firstName ::           string(20) 
+ 2. lastName  ::           string(20)  
+ 3. annualSalary ::        number(10)  
+ 4. super ::               number(10)
+ 5. paymentStartDate ::    string(30)
 
 ### Install Instructions
 To Deploy this application on your side, follow the guidelines given below.

@@ -2,11 +2,17 @@
 
     var constants = {
 
-        employeeExcelSchema: ['firstName', 'lastName', 'annualSalary', 'super', 'paymentStartDate'],
+        excelFileUploadLimit: 10,
 
-        //employeePaySlipSchema: ['firstName', 'lastName', 'annualSalary', 'super', 'paymentStartDate'],
+        employeeExcelSchema: [
+            { name: 'firstName', type: 'string', length: '20' },
+            { name: 'lastName', type: 'string', length: '20' },
+            { name: 'annualSalary', type: 'number', length: '10' },
+            { name: 'super', type: 'number', length: '2' },
+            { name: 'paymentStartDate', type: 'string', length: '30' }
+        ],
 
-        employeeFileUploadExt : 'csv',
+        employeeFileUploadExt: 'csv',
 
         taxSlab: [
             { min: 0, max: 18200, flatTax: 0, taxPerDollar: 0 },
