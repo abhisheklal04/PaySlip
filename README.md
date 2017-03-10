@@ -8,15 +8,15 @@ Features:
   2. Calculates monthly gross income, income tax, netIncome, super and displays in table.
   
 
-### CSV Format 
-### Name                 Type      Tag
- 1. firstName            string     1
- 2. lastName             string     2
- 3. annualSalary         number     3
- 4. super                number     4
- 5. paymentStartDate     number     5
+### CSV Format  
+### field name :: type 
+ 1. firstName ::           string  
+ 2. lastName  ::           string  
+ 3. annualSalary ::        number  
+ 4. super ::               number  
+ 5. paymentStartDate ::     number  
 
-
+### Install Instructions
 To Deploy this application on your side, follow the guidelines given below.
   1. Fork or download the repository
   2. install node js, npm, bower
