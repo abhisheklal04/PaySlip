@@ -6,12 +6,11 @@
 
             if (type == 'string' && value.length <= length) {
                 return value;
-            } else if (type == 'number' && value.length <= length && Number(value)) {
+            } else if (type == 'number' && value.length <= length && Number(value) != NaN && Number(value) >= 0) {
                 return Number(value);
             } else {
                 return null;
             }
-
         },
 
         addExcelDataToJSONListBySchema: function(data, resultList, schemaList) {
@@ -34,7 +33,6 @@
                 if (isValidSchema) {
                     resultList.push(obj);
                 }
-
             } else {
                 isValidSchema = false;
             }

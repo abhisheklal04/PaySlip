@@ -15,7 +15,7 @@ Features:
  1. firstName ::           string(20) 
  2. lastName  ::           string(20)  
  3. annualSalary ::        number(10)  
- 4. super ::               number(10)
+ 4. super ::               number(2)
  5. paymentStartDate ::    string(30)
 
 ### Install Instructions
