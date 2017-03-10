@@ -8,13 +8,13 @@ Features:
   2. Calculates monthly gross income, income tax, netIncome, super and displays in table.
   
 
-# CSV Format 
-# Name                 Type      Tag
-  firstName            string     1
-  lastName             string     2
-  annualSalary         number     3
-  super                number     4
-  paymentStartDate     number     5
+### CSV Format 
+### Name                 Type      Tag
+ 1. firstName            string     1
+ 2. lastName             string     2
+ 3. annualSalary         number     3
+ 4. super                number     4
+ 5. paymentStartDate     number     5
 
 
 To Deploy this application on your side, follow the guidelines given below.
