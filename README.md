@@ -2,7 +2,7 @@
 Generate Monthly Payslips from employee annual salary.
 The web application calculates employees monthly payslips based on their annual salaries.
 
-##Tools : Node, Express, Mocha, Chai, grunt, Angular, Bootstrap, HTML, CSS.
+##Tools : Node, Express, Mocha, Chai, Grunt, Angular, Bootstrap, HTML, CSS.
 
 Features:
   1. Upload employee salary details in csv format with a delimiter of ' , '  
